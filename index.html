@@ -16,15 +16,9 @@
                             900: '#064E3B',
                             950: '#022C22',
                         },
-                        navy: {
-                            800: '#1E293B',
-                            900: '#0F172A',
-                            950: '#020617',
-                        },
-                        gold: {
-                            400: '#FACC15',
-                            500: '#EAB308',
-                            600: '#CA8A04',
+                        amber: {
+                            400: '#FBBF24',
+                            500: '#F59E0B',
                         }
                     },
                     fontFamily: {
@@ -34,11 +28,10 @@
             }
         }
     </script>
-    <!-- Google Fonts -->
+    <!-- Google Fonts & Font Awesome Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
@@ -46,25 +39,25 @@
         }
         .bg-pattern {
             background-color: #f8fafc;
-            background-image: radial-gradient(#e2e8f0 0.8px, transparent 0.8px), radial-gradient(#e2e8f0 0.8px, #f8fafc 0.8px);
-            background-size: 32px 32px;
-            background-position: 0 0, 16px 16px;
+            background-image: radial-gradient(#cbd5e1 0.7px, transparent 0.7px), radial-gradient(#cbd5e1 0.7px, #f8fafc 0.7px);
+            background-size: 28px 28px;
+            background-position: 0 0, 14px 14px;
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-emerald-600 selection:text-white">
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-emerald-700 selection:text-white">
 
     <!-- Top Bar -->
-    <div class="bg-emerald-950 text-emerald-100 text-xs py-2 px-4 border-b border-emerald-900/50">
+    <div class="bg-emerald-950 text-emerald-100 text-xs py-2.5 px-4 border-b border-emerald-900/50">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
             <div class="flex items-center space-x-6">
-                <span><i class="fa-solid fa-location-dot text-gold-400 mr-1.5"></i> Village Kuro, Tehsil Ghowari, District Ghanche, Gilgit-Baltistan</span>
-                <span class="hidden md:inline"><i class="fa-solid fa-graduation-cap text-gold-400 mr-1.5"></i> Est. 1998 | Regd. Educational Institution</span>
+                <span><i class="fa-solid fa-heart text-amber-400 mr-1.5"></i> Nurturing Young Hearts & Minds in Kuro Village</span>
+                <span class="hidden md:inline"><i class="fa-solid fa-location-dot text-amber-400 mr-1.5"></i> Tehsil Ghowari, District Ghanche, Gilgit-Baltistan</span>
             </div>
             <div class="flex items-center space-x-4">
-                <a href="#notice-board" class="hover:text-gold-400 transition-colors"><i class="fa-solid fa-bullhorn mr-1"></i> Latest Announcements</a>
+                <a href="#notice-board" class="hover:text-amber-400 transition-colors"><i class="fa-solid fa-bullhorn mr-1"></i> Community Notices</a>
                 <span class="text-emerald-800">|</span>
-                <a href="#contact" class="hover:text-gold-400 transition-colors"><i class="fa-solid fa-phone mr-1"></i> Helpline</a>
+                <a href="mailto:ipskuro@gmail.com" class="hover:text-amber-400 transition-colors"><i class="fa-solid fa-envelope mr-1"></i> aliasif.kurovi@gmail.com</a>
             </div>
         </div>
     </div>
@@ -73,31 +66,30 @@
     <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <!-- Brand Logo & Name -->
-                <a href="#" class="flex items-center space-x-3 group">
-                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-700 to-emerald-900 flex items-center justify-center text-white text-xl font-bold shadow-md shadow-emerald-900/10 group-hover:scale-105 transition-transform duration-300">
-                        <i class="fa-solid fa-school text-gold-400"></i>
-                    </div>
+                <!-- Brand Logo & Placeholder -->
+                <a href="#" class="flex items-center space-x-3.5 group">
+                    <!-- LOGO PLACEHOLDER SVG -->
+					<img src="logo.png" alt="Islamia Public School Kuro Logo" class="w-12 h-12 rounded-full object-cover border-2 border-amber-400">
                     <div>
-                        <div class="font-bold text-lg leading-tight text-slate-900 group-hover:text-emerald-800 transition-colors">ISLAMIA PUBLIC SCHOOL KURO</div>
-                        <div class="text-xs font-semibold text-emerald-700 uppercase tracking-wider">Tehsil Ghowari • District Ghanche</div>
+                        <div class="font-extrabold text-slate-900 tracking-tight text-base sm:text-lg group-hover:text-emerald-800 transition-colors">ISLAMIA PUBLIC SCHOOL KURO</div>
+                        <div class="text-[11px] font-semibold text-emerald-700 uppercase tracking-wider">Serving Kuro & Tehsil Ghowari Since 1998</div>
                     </div>
                 </a>
 
                 <!-- Desktop Navigation Links -->
                 <div class="hidden lg:flex items-center space-x-8 text-sm font-medium">
-                    <a href="#home" class="text-slate-700 hover:text-emerald-700 transition-colors">Home</a>
-                    <a href="#about" class="text-slate-700 hover:text-emerald-700 transition-colors">About Us</a>
-                    <a href="#facilities" class="text-slate-700 hover:text-emerald-700 transition-colors">Facilities</a>
-                    <a href="#academics" class="text-slate-700 hover:text-emerald-700 transition-colors">Academics</a>
-                    <a href="#notice-board" class="text-slate-700 hover:text-emerald-700 transition-colors">Notice Board</a>
-                    <a href="#contact" class="text-slate-700 hover:text-emerald-700 transition-colors">Contact</a>
+                    <a href="#home" class="text-slate-700 hover:text-emerald-800 transition-colors">Home</a>
+                    <a href="#about" class="text-slate-700 hover:text-emerald-800 transition-colors">Our Story</a>
+                    <a href="#facilities" class="text-slate-700 hover:text-emerald-800 transition-colors">Campus Life</a>
+                    <a href="#academics" class="text-slate-700 hover:text-emerald-800 transition-colors">Learning</a>
+                    <a href="#notice-board" class="text-slate-700 hover:text-emerald-800 transition-colors">Notices</a>
+                    <a href="#contact" class="text-slate-700 hover:text-emerald-800 transition-colors">Get in Touch</a>
                 </div>
 
                 <!-- Call To Action & Mobile Toggle -->
                 <div class="flex items-center space-x-4">
-                    <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-lg font-semibold text-xs uppercase tracking-wider text-emerald-950 bg-gold-400 hover:bg-gold-500 shadow-sm transition-all duration-200 hover:-translate-y-0.5">
-                        <i class="fa-solid fa-paper-plane mr-2"></i> Apply Now
+                    <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-xl font-semibold text-xs uppercase tracking-wider text-emerald-950 bg-amber-400 hover:bg-amber-500 shadow-sm transition-all duration-200 hover:-translate-y-0.5">
+                        <i class="fa-solid fa-paper-plane mr-2"></i> Reach Out
                     </a>
                     <button id="mobile-menu-btn" class="lg:hidden p-2.5 rounded-lg text-slate-600 hover:text-emerald-800 hover:bg-slate-100 focus:outline-none" aria-label="Toggle Navigation">
                         <i class="fa-solid fa-bars text-xl"></i>
@@ -106,17 +98,17 @@
             </div>
         </div>
 
-        <!-- Mobile Navigation Menu -->
+        <!-- Mobile Navigation Drawer -->
         <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-100 bg-white px-4 pt-3 pb-6 space-y-3">
             <a href="#home" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-emerald-50 hover:text-emerald-800">Home</a>
-            <a href="#about" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-emerald-50 hover:text-emerald-800">About Us</a>
-            <a href="#facilities" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-emerald-50 hover:text-emerald-800">Facilities</a>
-            <a href="#academics" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-emerald-50 hover:text-emerald-800">Academics</a>
-            <a href="#notice-board" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-emerald-50 hover:text-emerald-800">Notice Board</a>
-            <a href="#contact" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-emerald-50 hover:text-emerald-800">Contact Us</a>
+            <a href="#about" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-emerald-50 hover:text-emerald-800">Our Story</a>
+            <a href="#facilities" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-emerald-50 hover:text-emerald-800">Campus Life</a>
+            <a href="#academics" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-emerald-50 hover:text-emerald-800">Learning</a>
+            <a href="#notice-board" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-emerald-50 hover:text-emerald-800">Notices</a>
+            <a href="#contact" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-emerald-50 hover:text-emerald-800">Get in Touch</a>
             <div class="pt-2">
-                <a href="#contact" class="mobile-link block w-full text-center px-5 py-3 rounded-lg font-semibold text-xs uppercase tracking-wider text-emerald-950 bg-gold-400 hover:bg-gold-500">
-                    Apply Now
+                <a href="#contact" class="mobile-link block w-full text-center px-5 py-3 rounded-xl font-semibold text-xs uppercase tracking-wider text-emerald-950 bg-amber-400 hover:bg-amber-500">
+                    Reach Out
                 </a>
             </div>
         </div>
@@ -124,96 +116,72 @@
 
     <!-- Hero Section -->
     <section id="home" class="relative bg-gradient-to-br from-emerald-950 via-emerald-900 to-slate-900 text-white overflow-hidden py-16 lg:py-24">
-        <!-- Decorative Background Glows -->
         <div class="absolute -top-24 -left-24 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute top-1/2 -right-24 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/2 -right-24 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
                 <!-- Hero Text Content -->
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div class="inline-flex items-center space-x-2 bg-emerald-800/60 backdrop-blur-md border border-emerald-700/50 px-3.5 py-1.5 rounded-full text-xs font-medium text-gold-400">
-                        <span class="flex h-2 w-2 rounded-full bg-gold-400 animate-pulse"></span>
-                        <span>Empowering Rural Youth Since 1998</span>
+                    <div class="inline-flex items-center space-x-2 bg-emerald-800/70 backdrop-blur-md border border-emerald-700/50 px-4 py-1.5 rounded-full text-xs font-medium text-amber-300">
+                        <i class="fa-solid fa-hands-holding-child text-amber-400"></i>
+                        <span>A Caring Community School in District Ghanche</span>
                     </div>
 
                     <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
-                        Empowering Rural Minds Through <span class="text-gold-400 underline decoration-emerald-500/50 underline-offset-8">Quality Education</span> & Modern Skills
+                        Where Every Child in Kuro Belongs, <span class="text-amber-400 underline decoration-emerald-500/50 underline-offset-8">Grows, and Thrives</span>
                     </h1>
 
-                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                        For over 25+ years, Islamia Public School Kuro (Regd) has stood as a beacon of academic excellence, discipline, and community leadership across Tehsil Ghowari in District Ghanche, Gilgit-Baltistan.
+                    <p class="text-slate-200 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                        For over 25 years, Islamia Public School Kuro (IPS-KURO) has been a warm second home for local children—combining rooted moral values, individual attention, and practical digital skills right here in Tehsil Ghowari.
                     </p>
 
                     <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
-                        <a href="#facilities" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl font-semibold text-sm text-emerald-950 bg-gold-400 hover:bg-gold-500 shadow-lg shadow-gold-500/20 transition-all duration-200 hover:-translate-y-0.5">
-                            <i class="fa-solid fa-chalkboard-user mr-2"></i> Explore Facilities
+                        <a href="#about" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl font-semibold text-sm text-emerald-950 bg-amber-400 hover:bg-amber-500 shadow-lg shadow-amber-500/20 transition-all duration-200 hover:-translate-y-0.5">
+                            <i class="fa-solid fa-heart mr-2"></i> Discover Our Story
                         </a>
                         <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl font-semibold text-sm text-white bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-md transition-all duration-200">
-                            <i class="fa-solid fa-address-card mr-2"></i> Contact Admissions
+                            <i class="fa-solid fa-envelope mr-2"></i> Send Parent Inquiry
                         </a>
                     </div>
                 </div>
 
-                <!-- Hero Feature Box / Graphic -->
+                <!-- Hero Photo & Campus Placeholder Card -->
                 <div class="lg:col-span-5">
-                    <div class="relative bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 sm:p-8 shadow-2xl space-y-6">
-                        <div class="flex items-center justify-between border-b border-white/10 pb-4">
-                            <div class="flex items-center space-x-3">
-                                <div class="w-10 h-10 rounded-lg bg-emerald-800 flex items-center justify-center text-gold-400 font-bold">
-                                    <i class="fa-solid fa-award text-lg"></i>
-                                </div>
-                                <div>
-                                    <h3 class="font-bold text-white text-sm">Registered Institution</h3>
-                                    <p class="text-xs text-slate-300">Tehsil Ghowari • District Ghanche</p>
-                                </div>
-                            </div>
-                            <span class="text-xs font-semibold px-2.5 py-1 bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 rounded-full">Primary & Middle</span>
-                        </div>
+                    <div class="relative bg-white/10 backdrop-blur-md border border-white/15 rounded-3xl p-6 shadow-2xl space-y-5">
+                        
+                        <!-- MAIN HERO PHOTO PLACEHOLDER -->
+                        <img src="ips.jpg" alt="Islamia Public School Kuro Campus" class="w-full h-full object-cover rounded-2xl shadow-xl">
 
-                        <div class="space-y-4 text-sm text-slate-300">
-                            <div class="flex items-start space-x-3">
-                                <i class="fa-solid fa-circle-check text-gold-400 mt-1"></i>
-                                <span>Modern desktop computer laboratory for practical IT & foundational digital skills.</span>
+                        <div class="flex items-center justify-between border-t border-white/10 pt-4 text-xs text-slate-200">
+                            <div class="flex items-center space-x-2">
+                                <i class="fa-solid fa-users text-amber-400"></i>
+                                <span>100% Local Dedicated Teachers</span>
                             </div>
-                            <div class="flex items-start space-x-3">
-                                <i class="fa-solid fa-circle-check text-gold-400 mt-1"></i>
-                                <span>Dedicated local teaching faculty committed to nurturing student ethics and academic rigor.</span>
-                            </div>
-                            <div class="flex items-start space-x-3">
-                                <i class="fa-solid fa-circle-check text-gold-400 mt-1"></i>
-                                <span>Central outdoor sports grounds for cricket, physical health, and co-curricular programs.</span>
-                            </div>
-                        </div>
-
-                        <div class="bg-emerald-950/80 rounded-xl p-4 border border-emerald-800/50 flex items-center justify-between text-xs">
-                            <div class="flex items-center space-x-2 text-emerald-200">
-                                <i class="fa-solid fa-bell text-gold-400"></i>
-                                <span>Admissions Session Open</span>
-                            </div>
-                            <a href="#contact" class="text-gold-400 hover:text-white font-semibold flex items-center">Inquire Now <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                            <span class="text-amber-300 font-semibold">Tehsil Ghowari</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Stats Banner Overlay -->
+            <!-- Warm Stats Banner Overlay -->
             <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 text-center">
                 <div class="space-y-1">
-                    <div class="text-2xl sm:text-3xl font-black text-gold-400">1998</div>
-                    <div class="text-xs text-slate-300 uppercase tracking-wider font-medium">Year Established</div>
+                    <div class="text-2xl sm:text-3xl font-black text-amber-400">1998</div>
+                    <div class="text-xs text-slate-300 uppercase tracking-wider font-medium">Serving Since</div>
                 </div>
                 <div class="space-y-1">
-                    <div class="text-2xl sm:text-3xl font-black text-gold-400">25+</div>
-                    <div class="text-xs text-slate-300 uppercase tracking-wider font-medium">Years of Legacy</div>
+                    <div class="text-2xl sm:text-3xl font-black text-amber-400">25+ Years</div>
+                    <div class="text-xs text-slate-300 uppercase tracking-wider font-medium">Community Trust</div>
                 </div>
                 <div class="space-y-1">
-                    <div class="text-2xl sm:text-3xl font-black text-gold-400">100%</div>
-                    <div class="text-xs text-slate-300 uppercase tracking-wider font-medium">Dedicated Local Staff</div>
+                    <div class="text-2xl sm:text-3xl font-black text-amber-400">Kuro Village</div>
+                    <div class="text-xs text-slate-300 uppercase tracking-wider font-medium">Deeply Rooted</div>
                 </div>
                 <div class="space-y-1">
-                    <div class="text-2xl sm:text-3xl font-black text-gold-400">Primary & Middle</div>
-                    <div class="text-xs text-slate-300 uppercase tracking-wider font-medium">Levels Offered</div>
+                    <div class="text-2xl sm:text-3xl font-black text-amber-400">Primary & Middle</div>
+                    <div class="text-xs text-slate-300 uppercase tracking-wider font-medium">Nurturing Learning</div>
                 </div>
             </div>
         </div>
@@ -223,57 +191,57 @@
     <section id="about" class="py-20 bg-pattern">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-emerald-800">About Our Institution</h2>
-                <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Rooted in Tradition, Committed to Progress</h3>
-                <div class="w-16 h-1 bg-gold-500 mx-auto rounded-full"></div>
+                <h2 class="text-xs font-bold uppercase tracking-widest text-emerald-800">Our Story & Family</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Built by the Community, for Our Children</h3>
+                <div class="w-16 h-1 bg-amber-500 mx-auto rounded-full"></div>
                 <p class="text-slate-600 text-base leading-relaxed">
-                    Islamia Public School Kuro (Regd) was established in 1998 to bridge educational gaps in Village Kuro and surrounding areas of Tehsil Ghowari, District Ghanche, Gilgit-Baltistan. For over two decades, the school has operated as a foundational hub for academic discipline, moral growth, and modern technological readiness.
+                    Islamia Public School Kuro wasn’t built as an enterprise—it was created out of a warm vision shared by parents and elders in Village Kuro. Since 1998, we have worked hand in hand with local families to give every child in Ghanche a safe, encouraging space to learn, read, laugh, and prepare for bright futures.
                 </p>
             </div>
 
-            <!-- Vision & Mission Grid -->
+            <!-- Vision & Values Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Card 1 -->
                 <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200/80 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-800 flex items-center justify-center text-xl font-bold mb-5 group-hover:bg-emerald-800 group-hover:text-gold-400 transition-colors">
-                        <i class="fa-solid fa-book-open-reader"></i>
+                    <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-800 flex items-center justify-center text-xl font-bold mb-5 group-hover:bg-emerald-800 group-hover:text-amber-400 transition-colors">
+                        <i class="fa-solid fa-heart"></i>
                     </div>
-                    <h4 class="text-lg font-bold text-slate-900 mb-2">Academic Rigor</h4>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">Individual Care</h4>
                     <p class="text-slate-600 text-sm leading-relaxed">
-                        Comprehensive curriculum designed to develop critical thinking, problem-solving abilities, and strong core foundations in STEM and languages.
+                        Every child is known by name. Our dedicated teachers treat every student like family, encouraging them step by step.
                     </p>
                 </div>
 
                 <!-- Card 2 -->
                 <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200/80 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-800 flex items-center justify-center text-xl font-bold mb-5 group-hover:bg-emerald-800 group-hover:text-gold-400 transition-colors">
-                        <i class="fa-solid fa-hands-holding-child"></i>
+                    <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-800 flex items-center justify-center text-xl font-bold mb-5 group-hover:bg-emerald-800 group-hover:text-amber-400 transition-colors">
+                        <i class="fa-solid fa-seedling"></i>
                     </div>
-                    <h4 class="text-lg font-bold text-slate-900 mb-2">Character Building</h4>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">Moral & Cultural Ethics</h4>
                     <p class="text-slate-600 text-sm leading-relaxed">
-                        Emphasis on moral integrity, mutual respect, civic responsibility, and traditional cultural ethics alongside formal academic learning.
+                        Instilling respect, humility, Islamic values, and rich Balti cultural traditions that ground our students throughout life.
                     </p>
                 </div>
 
                 <!-- Card 3 -->
                 <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200/80 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-800 flex items-center justify-center text-xl font-bold mb-5 group-hover:bg-emerald-800 group-hover:text-gold-400 transition-colors">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-800 flex items-center justify-center text-xl font-bold mb-5 group-hover:bg-emerald-800 group-hover:text-amber-400 transition-colors">
                         <i class="fa-solid fa-laptop-code"></i>
                     </div>
-                    <h4 class="text-lg font-bold text-slate-900 mb-2">Digital Literacy</h4>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">Practical Computer Skills</h4>
                     <p class="text-slate-600 text-sm leading-relaxed">
-                        Early exposure to desktop computers, basic IT concepts, and digital skills to prepare students for a technology-driven world.
+                        Bringing modern computer knowledge into our village, helping local youth confidently embrace technology.
                     </p>
                 </div>
 
                 <!-- Card 4 -->
                 <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200/80 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-800 flex items-center justify-center text-xl font-bold mb-5 group-hover:bg-emerald-800 group-hover:text-gold-400 transition-colors">
-                        <i class="fa-solid fa-users-line"></i>
+                    <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-800 flex items-center justify-center text-xl font-bold mb-5 group-hover:bg-emerald-800 group-hover:text-amber-400 transition-colors">
+                        <i class="fa-solid fa-people-roof"></i>
                     </div>
-                    <h4 class="text-lg font-bold text-slate-900 mb-2">Community Empowerment</h4>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">Open Parent Dialogue</h4>
                     <p class="text-slate-600 text-sm leading-relaxed">
-                        A locally driven educational model encouraging parental involvement, regional teacher development, and accessible youth schooling.
+                        We welcome parents into our campus anytime. Education is a joint journey between school and home.
                     </p>
                 </div>
             </div>
@@ -285,95 +253,97 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
                 <div class="space-y-3 max-w-2xl">
-                    <h2 class="text-xs font-bold uppercase tracking-widest text-emerald-800">Campus Infrastructure</h2>
-                    <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Functional Learning Environments</h3>
-                    <div class="w-16 h-1 bg-gold-500 rounded-full"></div>
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-emerald-800">Campus Facilities</h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Spaces Where Learning Feels Natural</h3>
+                    <div class="w-16 h-1 bg-amber-500 rounded-full"></div>
                 </div>
                 <p class="text-slate-600 text-sm max-w-md">
-                    IPS-KURO maintains essential academic and recreational spaces tailored to foster well-rounded mental, physical, and technical growth.
+                    Simple, functional, and well-cared-for environment designed to give children room to explore, play, and learn together.
                 </p>
             </div>
 
             <!-- Facilities Grid -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
                 <!-- Facility 1: Computer Lab -->
                 <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-                    <div class="p-8">
-                        <div class="w-14 h-14 rounded-xl bg-emerald-800 text-gold-400 flex items-center justify-center text-2xl font-bold mb-6">
-                            <i class="fa-solid fa-desktop"></i>
+                    <div>
+                        <!-- PHOTO PLACEHOLDER 1 -->
+                        <img src="comp_lab.jpg" alt="Islamia Public School Kuro Campus" class="w-full h-full object-cover rounded-2xl shadow-xl">
+                        <div class="p-6">
+                            <h4 class="text-lg font-bold text-slate-900 mb-2">Our Computer Laboratory</h4>
+                            <p class="text-slate-600 text-xs leading-relaxed mb-4">
+                                Equipped with desktop systems where students get early hands-on practice with typing, basic digital concepts, and educational software.
+                            </p>
+                            <ul class="space-y-1.5 text-xs font-medium text-slate-700">
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-700 mr-2"></i> Guided IT Lessons for Young Learners</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-700 mr-2"></i> Supervised Keyboard & Software Exercises</li>
+                            </ul>
                         </div>
-                        <h4 class="text-xl font-bold text-slate-900 mb-3">Advanced Computer Laboratory</h4>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                            Equipped with desktop computer workstations offering hands-on basic computer science, keyboard skills, practical IT training, and educational software for young learners.
-                        </p>
-                        <ul class="space-y-2 text-xs font-medium text-slate-700">
-                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-700 mr-2"></i> Desktop Workstations for Student Practice</li>
-                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-700 mr-2"></i> Basic Computer Science Foundations</li>
-                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-700 mr-2"></i> Supervised Practical IT Classes</li>
-                        </ul>
                     </div>
-                    <div class="bg-slate-100 px-8 py-4 border-t border-slate-200/80 flex justify-between items-center text-xs text-slate-600">
-                        <span class="font-semibold text-emerald-900">Digital Skill Center</span>
-                        <i class="fa-solid fa-microchip text-slate-400"></i>
+                    <div class="bg-slate-100 px-6 py-3 border-t border-slate-200/80 flex justify-between items-center text-xs text-slate-600">
+                        <span class="font-semibold text-emerald-900">Digital Empowerment</span>
+                        <i class="fa-solid fa-laptop text-slate-400"></i>
                     </div>
                 </div>
 
                 <!-- Facility 2: Playground -->
                 <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-                    <div class="p-8">
-                        <div class="w-14 h-14 rounded-xl bg-emerald-800 text-gold-400 flex items-center justify-center text-2xl font-bold mb-6">
-                            <i class="fa-solid fa-volleyball"></i>
+                    <div>
+                        <!-- PHOTO PLACEHOLDER 2 -->
+                        <img src="ground.jpg" alt="Islamia Public School Kuro Campus" class="w-full h-full object-cover rounded-2xl shadow-xl">
+                        <div class="p-6">
+                            <h4 class="text-lg font-bold text-slate-900 mb-2">Central Village Field & Grounds</h4>
+                            <p class="text-slate-600 text-xs leading-relaxed mb-4">
+                                Our open village sports space where students gather for morning assemblies, physical exercise, and friendly cricket matches during sports week.
+                            </p>
+                            <ul class="space-y-1.5 text-xs font-medium text-slate-700">
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-700 mr-2"></i> Inter-Class Cricket Matches</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-700 mr-2"></i> Morning Drills & Outdoor Physical Health</li>
+                            </ul>
                         </div>
-                        <h4 class="text-xl font-bold text-slate-900 mb-3">Central Outdoor Playground</h4>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                            A dedicated open field facility used for physical education, athletic development, school assemblies, and popular sports tournaments including inter-class cricket matches.
-                        </p>
-                        <ul class="space-y-2 text-xs font-medium text-slate-700">
-                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-700 mr-2"></i> Cricket & Field Athletics Space</li>
-                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-700 mr-2"></i> Daily Morning Assemblies & Drill</li>
-                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-700 mr-2"></i> Annual Co-Curricular Sports Events</li>
-                        </ul>
                     </div>
-                    <div class="bg-slate-100 px-8 py-4 border-t border-slate-200/80 flex justify-between items-center text-xs text-slate-600">
-                        <span class="font-semibold text-emerald-900">Sports & Fitness</span>
+                    <div class="bg-slate-100 px-6 py-3 border-t border-slate-200/80 flex justify-between items-center text-xs text-slate-600">
+                        <span class="font-semibold text-emerald-900">Health & Play</span>
                         <i class="fa-solid fa-trophy text-slate-400"></i>
                     </div>
                 </div>
 
                 <!-- Facility 3: Classrooms -->
                 <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-                    <div class="p-8">
-                        <div class="w-14 h-14 rounded-xl bg-emerald-800 text-gold-400 flex items-center justify-center text-2xl font-bold mb-6">
-                            <i class="fa-solid fa-chalkboard"></i>
+                    <div>
+                        <!-- PHOTO PLACEHOLDER 3 -->
+                        <img src="class.jpg" alt="Islamia Public School Kuro Campus" class="w-full h-full object-cover rounded-2xl shadow-xl">
+
+                        <div class="p-6">
+                            <h4 class="text-lg font-bold text-slate-900 mb-2">Bright & Cheerful Classrooms</h4>
+                            <p class="text-slate-600 text-xs leading-relaxed mb-4">
+                                Sunlit, well-arranged classrooms designed to foster focused learning, teamwork, and active participation between students and local teachers.
+                            </p>
+                            <ul class="space-y-1.5 text-xs font-medium text-slate-700">
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-700 mr-2"></i> Close Teacher Guidance</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-700 mr-2"></i> Friendly Learning Environment</li>
+                            </ul>
                         </div>
-                        <h4 class="text-xl font-bold text-slate-900 mb-3">Bright & Focused Classrooms</h4>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                            Optimized learning rooms with structured seating arrangements, ample natural daylight, and teacher-to-student ratios that support individualized academic monitoring.
-                        </p>
-                        <ul class="space-y-2 text-xs font-medium text-slate-700">
-                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-700 mr-2"></i> Structured Desk Seating & Lighting</li>
-                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-700 mr-2"></i> Close Teacher-Student Monitoring</li>
-                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-700 mr-2"></i> Interactive Blackboards & Learning Aids</li>
-                        </ul>
                     </div>
-                    <div class="bg-slate-100 px-8 py-4 border-t border-slate-200/80 flex justify-between items-center text-xs text-slate-600">
-                        <span class="font-semibold text-emerald-900">Academic Core</span>
-                        <i class="fa-solid fa-graduation-cap text-slate-400"></i>
+                    <div class="bg-slate-100 px-6 py-3 border-t border-slate-200/80 flex justify-between items-center text-xs text-slate-600">
+                        <span class="font-semibold text-emerald-900">Academic Warmth</span>
+                        <i class="fa-solid fa-book-open text-slate-400"></i>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Academics & Curriculum Section -->
+    <!-- Learning & Academics Section -->
     <section id="academics" class="py-20 bg-slate-900 text-white relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-gold-400">Academic Framework</h2>
-                <h3 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Primary & Middle School Excellence</h3>
-                <div class="w-16 h-1 bg-gold-500 mx-auto rounded-full"></div>
+                <h2 class="text-xs font-bold uppercase tracking-widest text-amber-400">Education & Growth</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Primary & Middle School Foundations</h3>
+                <div class="w-16 h-1 bg-amber-500 mx-auto rounded-full"></div>
                 <p class="text-slate-300 text-base leading-relaxed">
-                    IPS-KURO offers a holistic educational path combining core academic subjects with co-curricular opportunities, preparing young students for secondary education in Gilgit-Baltistan and beyond.
+                    We guide children through their most crucial learning years—building confidence in reading, languages, basic mathematics, and computer literacy.
                 </p>
             </div>
 
@@ -382,22 +352,22 @@
                 <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-6">
-                            <span class="px-3 py-1 bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 rounded-full text-xs font-bold uppercase tracking-wider">Foundation Stage</span>
-                            <i class="fa-solid fa-child text-2xl text-gold-400"></i>
+                            <span class="px-3 py-1 bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 rounded-full text-xs font-bold uppercase tracking-wider">Early Years</span>
+                            <i class="fa-solid fa-child-reaching text-2xl text-amber-400"></i>
                         </div>
-                        <h4 class="text-2xl font-bold mb-3">Primary School Curriculum</h4>
+                        <h4 class="text-2xl font-bold mb-3">Primary School Learning</h4>
                         <p class="text-slate-300 text-sm leading-relaxed mb-6">
-                            Focuses on literacy, numeracy, language development, basic science, and positive social habits.
+                            Nurturing curiosity, reading habits, character development, and foundational literacy in a warm atmosphere.
                         </p>
                         <div class="space-y-3 border-t border-white/10 pt-6">
-                            <h5 class="text-xs font-bold uppercase text-gold-400 tracking-wider">Key Academic Subjects:</h5>
+                            <h5 class="text-xs font-bold uppercase text-amber-400 tracking-wider">Key Subjects & Activities:</h5>
                             <div class="grid grid-cols-2 gap-2 text-xs text-slate-200">
-                                <div class="bg-white/5 p-2.5 rounded-lg flex items-center"><i class="fa-solid fa-book-quran mr-2 text-emerald-400"></i> Islamic Studies</div>
-                                <div class="bg-white/5 p-2.5 rounded-lg flex items-center"><i class="fa-solid fa-pen-nib mr-2 text-emerald-400"></i> Urdu Language</div>
-                                <div class="bg-white/5 p-2.5 rounded-lg flex items-center"><i class="fa-solid fa-language mr-2 text-emerald-400"></i> English Language</div>
+                                <div class="bg-white/5 p-2.5 rounded-lg flex items-center"><i class="fa-solid fa-book-quran mr-2 text-emerald-400"></i> Islamic Ethics</div>
+                                <div class="bg-white/5 p-2.5 rounded-lg flex items-center"><i class="fa-solid fa-pen-nib mr-2 text-emerald-400"></i> Urdu Reading</div>
+                                <div class="bg-white/5 p-2.5 rounded-lg flex items-center"><i class="fa-solid fa-language mr-2 text-emerald-400"></i> Basic English</div>
                                 <div class="bg-white/5 p-2.5 rounded-lg flex items-center"><i class="fa-solid fa-calculator mr-2 text-emerald-400"></i> Elementary Math</div>
-                                <div class="bg-white/5 p-2.5 rounded-lg flex items-center"><i class="fa-solid fa-flask mr-2 text-emerald-400"></i> General Science</div>
-                                <div class="bg-white/5 p-2.5 rounded-lg flex items-center"><i class="fa-solid fa-desktop mr-2 text-emerald-400"></i> Computer Orientation</div>
+                                <div class="bg-white/5 p-2.5 rounded-lg flex items-center"><i class="fa-solid fa-leaf mr-2 text-emerald-400"></i> General Science</div>
+                                <div class="bg-white/5 p-2.5 rounded-lg flex items-center"><i class="fa-solid fa-icons mr-2 text-emerald-400"></i> Storytelling & Arts</div>
                             </div>
                         </div>
                     </div>
@@ -407,22 +377,22 @@
                 <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-6">
-                            <span class="px-3 py-1 bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 rounded-full text-xs font-bold uppercase tracking-wider">Intermediate Stage</span>
-                            <i class="fa-solid fa-user-graduate text-2xl text-gold-400"></i>
+                            <span class="px-3 py-1 bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 rounded-full text-xs font-bold uppercase tracking-wider">Middle Level</span>
+                            <i class="fa-solid fa-graduation-cap text-2xl text-amber-400"></i>
                         </div>
-                        <h4 class="text-2xl font-bold mb-3">Middle School Curriculum</h4>
+                        <h4 class="text-2xl font-bold mb-3">Middle School Program</h4>
                         <p class="text-slate-300 text-sm leading-relaxed mb-6">
-                            Deepens conceptual understanding, introduces practical IT lab exercises, and encourages analytical reasoning.
+                            Preparing students for secondary education with practical computer lab lessons, public speech confidence, and analytical thinking.
                         </p>
                         <div class="space-y-3 border-t border-white/10 pt-6">
-                            <h5 class="text-xs font-bold uppercase text-gold-400 tracking-wider">Advanced Subjects & Activities:</h5>
+                            <h5 class="text-xs font-bold uppercase text-amber-400 tracking-wider">Focus Areas:</h5>
                             <div class="grid grid-cols-2 gap-2 text-xs text-slate-200">
-                                <div class="bg-white/5 p-2.5 rounded-lg flex items-center"><i class="fa-solid fa-atom mr-2 text-gold-400"></i> Integrated Science</div>
-                                <div class="bg-white/5 p-2.5 rounded-lg flex items-center"><i class="fa-solid fa-globe mr-2 text-gold-400"></i> Social Studies</div>
-                                <div class="bg-white/5 p-2.5 rounded-lg flex items-center"><i class="fa-solid fa-code mr-2 text-gold-400"></i> Practical Computer IT</div>
-                                <div class="bg-white/5 p-2.5 rounded-lg flex items-center"><i class="fa-solid fa-comments mr-2 text-gold-400"></i> Debates & Speeches</div>
-                                <div class="bg-white/5 p-2.5 rounded-lg flex items-center"><i class="fa-solid fa-square-root-variable mr-2 text-gold-400"></i> Advanced Math</div>
-                                <div class="bg-white/5 p-2.5 rounded-lg flex items-center"><i class="fa-solid fa-flag mr-2 text-gold-400"></i> National Events</div>
+                                <div class="bg-white/5 p-2.5 rounded-lg flex items-center"><i class="fa-solid fa-flask mr-2 text-amber-400"></i> General Sciences</div>
+                                <div class="bg-white/5 p-2.5 rounded-lg flex items-center"><i class="fa-solid fa-globe mr-2 text-amber-400"></i> Social Studies</div>
+                                <div class="bg-white/5 p-2.5 rounded-lg flex items-center"><i class="fa-solid fa-desktop mr-2 text-amber-400"></i> Hands-on Computer IT</div>
+                                <div class="bg-white/5 p-2.5 rounded-lg flex items-center"><i class="fa-solid fa-comments mr-2 text-amber-400"></i> Speech & Debates</div>
+                                <div class="bg-white/5 p-2.5 rounded-lg flex items-center"><i class="fa-solid fa-square-root-variable mr-2 text-amber-400"></i> Mathematics</div>
+                                <div class="bg-white/5 p-2.5 rounded-lg flex items-center"><i class="fa-solid fa-hands-clapping mr-2 text-amber-400"></i> Community Events</div>
                             </div>
                         </div>
                     </div>
@@ -431,50 +401,50 @@
         </div>
     </section>
 
-    <!-- Notice Board & Announcements Section -->
+    <!-- Notice Board Section -->
     <section id="notice-board" class="py-20 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
                 <div class="space-y-3">
-                    <h2 class="text-xs font-bold uppercase tracking-widest text-emerald-800">Dynamic Circulars</h2>
-                    <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Notice Board & Announcements</h3>
-                    <div class="w-16 h-1 bg-gold-500 rounded-full"></div>
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-emerald-800">School News</h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Community Notice Board</h3>
+                    <div class="w-16 h-1 bg-amber-500 rounded-full"></div>
                 </div>
 
-                <!-- Search & Category Filter -->
+                <!-- Search & Filter -->
                 <div class="flex flex-col sm:flex-row gap-3">
                     <div class="relative">
                         <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
-                        <input type="text" id="notice-search" placeholder="Search notices..." class="pl-9 pr-4 py-2 rounded-lg border border-slate-300 text-xs focus:ring-2 focus:ring-emerald-600 focus:outline-none w-full sm:w-48">
+                        <input type="text" id="notice-search" placeholder="Search announcements..." class="pl-9 pr-4 py-2 rounded-lg border border-slate-300 text-xs focus:ring-2 focus:ring-emerald-700 focus:outline-none w-full sm:w-48">
                     </div>
                     <div class="flex space-x-1 bg-slate-200/80 p-1 rounded-lg text-xs font-medium">
-                        <button class="notice-filter-btn px-3 py-1.5 rounded-md bg-white shadow-sm text-emerald-900 font-bold" data-category="all">All</button>
+                        <button class="notice-filter-btn px-3 py-1.5 rounded-md bg-white shadow-sm text-emerald-950 font-bold" data-category="all">All</button>
                         <button class="notice-filter-btn px-3 py-1.5 rounded-md text-slate-600 hover:text-slate-900" data-category="academic">Academic</button>
                         <button class="notice-filter-btn px-3 py-1.5 rounded-md text-slate-600 hover:text-slate-900" data-category="sports">Sports</button>
-                        <button class="notice-filter-btn px-3 py-1.5 rounded-md text-slate-600 hover:text-slate-900" data-category="events">Events</button>
+                        <button class="notice-filter-btn px-3 py-1.5 rounded-md text-slate-600 hover:text-slate-900" data-category="community">Community</button>
                     </div>
                 </div>
             </div>
 
-            <!-- Notice Board Container -->
+            <!-- Notice Grid Container -->
             <div id="notice-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Notice Items (Dynamic Javascript Rendering / Searchable) -->
+                <!-- Rendered Dynamically via Script -->
             </div>
         </div>
     </section>
 
-    <!-- Notice Detail Modal -->
+    <!-- Notice Modal -->
     <div id="notice-modal" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
         <div class="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl space-y-4 relative">
             <button id="close-modal-btn" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 text-lg">
                 <i class="fa-solid fa-xmark"></i>
             </button>
             <div class="flex items-center space-x-2">
-                <span id="modal-category" class="px-2.5 py-1 bg-emerald-100 text-emerald-800 text-xs font-bold rounded-full uppercase">Academic</span>
-                <span id="modal-date" class="text-xs text-slate-500">Oct 12, 2026</span>
+                <span id="modal-category" class="px-2.5 py-1 bg-emerald-100 text-emerald-900 text-xs font-bold rounded-full uppercase">Category</span>
+                <span id="modal-date" class="text-xs text-slate-500">Date</span>
             </div>
-            <h4 id="modal-title" class="text-xl font-bold text-slate-900">Notice Title Here</h4>
-            <p id="modal-content" class="text-slate-600 text-sm leading-relaxed">Detailed notice text description goes here...</p>
+            <h4 id="modal-title" class="text-xl font-bold text-slate-900">Notice Title</h4>
+            <p id="modal-content" class="text-slate-600 text-sm leading-relaxed">Notice content...</p>
             <div class="pt-4 border-t border-slate-100 flex justify-end">
                 <button id="modal-dismiss-btn" class="px-5 py-2 bg-emerald-800 text-white rounded-lg text-xs font-semibold hover:bg-emerald-900">
                     Close Notice
@@ -483,30 +453,30 @@
         </div>
     </div>
 
-    <!-- Interactive Admissions & Contact Portal -->
+    <!-- Direct Contact & Parent Portal -->
     <section id="contact" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
                 
-                <!-- Contact Info & FAQs Column -->
+                <!-- Contact Info & FAQs -->
                 <div class="lg:col-span-5 space-y-8">
                     <div class="space-y-4">
-                        <h2 class="text-xs font-bold uppercase tracking-widest text-emerald-800">Admissions & Inquiries</h2>
-                        <h3 class="text-3xl font-extrabold text-slate-900 tracking-tight">Get in Touch With IPS-KURO</h3>
-                        <div class="w-16 h-1 bg-gold-500 rounded-full"></div>
+                        <h2 class="text-xs font-bold uppercase tracking-widest text-emerald-800">Warm Welcome</h2>
+                        <h3 class="text-3xl font-extrabold text-slate-900 tracking-tight">We'd Love to Hear From You</h3>
+                        <div class="w-16 h-1 bg-amber-500 rounded-full"></div>
                         <p class="text-slate-600 text-sm leading-relaxed">
-                            Have questions regarding student admissions, class schedules, or institutional details? Reach out to our administrative desk.
+                            Whether you are a local parent in Kuro, a community elder, or looking for admission details for your child, please feel free to drop us a note or visit our school.
                         </p>
                     </div>
 
-                    <!-- Location Card -->
+                    <!-- Direct Email & Location Card -->
                     <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 space-y-4">
                         <div class="flex items-start space-x-4">
-                            <div class="w-10 h-10 rounded-lg bg-emerald-800 text-gold-400 flex items-center justify-center text-lg flex-shrink-0">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-800 text-amber-400 flex items-center justify-center text-lg flex-shrink-0">
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-slate-900 text-sm">School Campus Address</h4>
+                                <h4 class="font-bold text-slate-900 text-sm">School Campus Location</h4>
                                 <p class="text-xs text-slate-600 leading-relaxed mt-1">
                                     Islamia Public School Kuro (Regd)<br>
                                     Village Kuro, Tehsil Ghowari<br>
@@ -516,104 +486,99 @@
                         </div>
 
                         <div class="flex items-start space-x-4 border-t border-slate-200/60 pt-4">
-                            <div class="w-10 h-10 rounded-lg bg-emerald-800 text-gold-400 flex items-center justify-center text-lg flex-shrink-0">
-                                <i class="fa-solid fa-clock"></i>
+                            <div class="w-10 h-10 rounded-xl bg-emerald-800 text-amber-400 flex items-center justify-center text-lg flex-shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-slate-900 text-sm">Office Hours</h4>
-                                <p class="text-xs text-slate-600 mt-1">Monday – Saturday: 8:00 AM – 2:00 PM</p>
+                                <h4 class="font-bold text-slate-900 text-sm">Direct Email</h4>
+                                <a href="mailto:aliasif.kurovi@gmail.com" class="text-xs text-emerald-800 font-bold hover:underline mt-1 block">aliasif.kurovi@gmail.com</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- FAQ Accordion -->
                     <div class="space-y-3">
-                        <h4 class="font-bold text-slate-900 text-base">Frequently Asked Questions</h4>
+                        <h4 class="font-bold text-slate-900 text-base">Parent Questions</h4>
                         
                         <div class="border border-slate-200 rounded-xl overflow-hidden">
                             <button class="faq-toggle w-full px-4 py-3 bg-slate-50 hover:bg-slate-100 flex justify-between items-center text-left text-xs font-semibold text-slate-800">
-                                <span>What grades are offered at IPS-KURO?</span>
+                                <span>How do I send an inquiry without a complex login?</span>
                                 <i class="fa-solid fa-chevron-down transition-transform duration-200"></i>
                             </button>
                             <div class="faq-content hidden px-4 py-3 bg-white text-xs text-slate-600 border-t border-slate-100">
-                                IPS-KURO offers comprehensive Primary and Middle level education (Classes Nursery through Middle grades).
+                                Simply fill out the form beside this box and click 'Launch Email Inquiry'. Your phone or computer will open your standard mail app with the message pre-filled to send directly to IPS-KURO!
                             </div>
                         </div>
 
                         <div class="border border-slate-200 rounded-xl overflow-hidden">
                             <button class="faq-toggle w-full px-4 py-3 bg-slate-50 hover:bg-slate-100 flex justify-between items-center text-left text-xs font-semibold text-slate-800">
-                                <span>When do new admissions open?</span>
+                                <span>What age groups do you serve in Kuro?</span>
                                 <i class="fa-solid fa-chevron-down transition-transform duration-200"></i>
                             </button>
                             <div class="faq-content hidden px-4 py-3 bg-white text-xs text-slate-600 border-t border-slate-100">
-                                Admissions usually open annually prior to the start of the academic session. Inquiries can be submitted year-round via our admissions portal.
-                            </div>
-                        </div>
-
-                        <div class="border border-slate-200 rounded-xl overflow-hidden">
-                            <button class="faq-toggle w-full px-4 py-3 bg-slate-50 hover:bg-slate-100 flex justify-between items-center text-left text-xs font-semibold text-slate-800">
-                                <span>Are computer classes included in the curriculum?</span>
-                                <i class="fa-solid fa-chevron-down transition-transform duration-200"></i>
-                            </button>
-                            <div class="faq-content hidden px-4 py-3 bg-white text-xs text-slate-600 border-t border-slate-100">
-                                Yes, students have scheduled practical sessions in our desktop computer laboratory to learn basic IT literacy and practical skills.
+                                We welcome young children starting from Nursery/K.G. all the way up through Primary and Middle grades.
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Interactive Admission Inquiry Form -->
+                <!-- Form Section -->
                 <div class="lg:col-span-7 bg-slate-50 p-8 sm:p-10 rounded-2xl border border-slate-200/80 shadow-sm">
                     <div class="space-y-2 mb-6">
-                        <span class="text-xs font-bold text-emerald-800 uppercase tracking-wider">Admissions Desk</span>
-                        <h3 class="text-2xl font-bold text-slate-900">Online Admission Inquiry Form</h3>
-                        <p class="text-xs text-slate-600">Please fill out the form below and our office staff will process your query.</p>
+                        <span class="text-xs font-bold text-emerald-800 uppercase tracking-wider">Direct Message</span>
+                        <h3 class="text-2xl font-bold text-slate-900">Parent & Visitor Inquiry Form</h3>
+                        
+                        <div class="bg-amber-50 border border-amber-200 rounded-xl p-3 text-xs text-amber-900 flex items-start space-x-2.5">
+                            <i class="fa-solid fa-circle-info text-amber-600 mt-0.5 flex-shrink-0"></i>
+                            <div>
+                                Submitting this form opens your personal email client formatted to send directly to <strong class="underline">IPS-KURO</strong>.
+                            </div>
+                        </div>
                     </div>
 
                     <form id="admission-form" class="space-y-4">
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
-                                <label class="block text-xs font-semibold text-slate-700 mb-1.5" for="parent-name">Parent / Guardian Name *</label>
-                                <input type="text" id="parent-name" required placeholder="e.g. Ali Raza" class="w-full px-3.5 py-2.5 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-600 focus:outline-none bg-white">
+                                <label class="block text-xs font-semibold text-slate-700 mb-1.5" for="parent-name">Your Name *</label>
+                                <input type="text" id="parent-name" required placeholder="e.g. Hassan Raza" class="w-full px-3.5 py-2.5 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-700 focus:outline-none bg-white">
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-700 mb-1.5" for="phone-number">Contact Phone Number *</label>
-                                <input type="tel" id="phone-number" required placeholder="03xx-xxxxxxx" class="w-full px-3.5 py-2.5 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-600 focus:outline-none bg-white">
+                                <label class="block text-xs font-semibold text-slate-700 mb-1.5" for="phone-number">Phone Number *</label>
+                                <input type="tel" id="phone-number" required placeholder="03xx-xxxxxxx" class="w-full px-3.5 py-2.5 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-700 focus:outline-none bg-white">
                             </div>
                         </div>
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
-                                <label class="block text-xs font-semibold text-slate-700 mb-1.5" for="student-name">Child / Student Name *</label>
-                                <input type="text" id="student-name" required placeholder="e.g. Ahmad Ali" class="w-full px-3.5 py-2.5 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-600 focus:outline-none bg-white">
+                                <label class="block text-xs font-semibold text-slate-700 mb-1.5" for="student-name">Child / Student Name</label>
+                                <input type="text" id="student-name" placeholder="e.g. Ali" class="w-full px-3.5 py-2.5 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-700 focus:outline-none bg-white">
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-700 mb-1.5" for="grade-seeking">Grade / Class Seeking *</label>
-                                <select id="grade-seeking" required class="w-full px-3.5 py-2.5 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-600 focus:outline-none bg-white">
-                                    <option value="">Select Level...</option>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1.5" for="grade-seeking">Grade Level Seeking</label>
+                                <select id="grade-seeking" class="w-full px-3.5 py-2.5 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-700 focus:outline-none bg-white">
+                                    <option value="General Inquiry">General Inquiry</option>
                                     <option value="Nursery / K.G.">Nursery / K.G.</option>
-                                    <option value="Primary (Grade 1 - 5)">Primary (Grade 1 - 5)</option>
-                                    <option value="Middle (Grade 6 - 8)">Middle (Grade 6 - 8)</option>
+                                    <option value="Primary Level">Primary Level</option>
+                                    <option value="Middle Level">Middle Level</option>
                                 </select>
                             </div>
                         </div>
 
                         <div>
-                            <label class="block text-xs font-semibold text-slate-700 mb-1.5" for="message">Inquiry / Special Note</label>
-                            <textarea id="message" rows="4" placeholder="Any additional details or questions regarding admission..." class="w-full px-3.5 py-2.5 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-600 focus:outline-none bg-white"></textarea>
+                            <label class="block text-xs font-semibold text-slate-700 mb-1.5" for="message">Your Message or Question *</label>
+                            <textarea id="message" rows="4" required placeholder="Write your message here..." class="w-full px-3.5 py-2.5 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-700 focus:outline-none bg-white"></textarea>
                         </div>
 
-                        <button type="submit" class="w-full py-3 px-6 rounded-xl text-xs font-bold uppercase tracking-wider text-emerald-950 bg-gold-400 hover:bg-gold-500 shadow-md transition-all duration-200">
-                            <i class="fa-solid fa-paper-plane mr-2"></i> Submit Admission Inquiry
+                        <button type="submit" class="w-full py-3.5 px-6 rounded-xl text-xs font-bold uppercase tracking-wider text-emerald-950 bg-amber-400 hover:bg-amber-500 shadow-md transition-all duration-200 flex items-center justify-center">
+                            <i class="fa-solid fa-paper-plane mr-2"></i> Launch Email Inquiry
                         </button>
                     </form>
 
-                    <!-- Success Alert Toast (Hidden by default) -->
                     <div id="form-success" class="hidden mt-4 p-4 rounded-xl bg-emerald-100 border border-emerald-300 text-emerald-900 text-xs flex items-center space-x-3">
-                        <i class="fa-solid fa-circle-check text-emerald-700 text-lg"></i>
+                        <i class="fa-solid fa-circle-check text-emerald-700 text-lg flex-shrink-0"></i>
                         <div>
-                            <span class="font-bold block">Inquiry Submitted Successfully!</span>
-                            <span>Thank you for contacting Islamia Public School Kuro. Our admissions office will get back to you shortly.</span>
+                            <span class="font-bold block">Email Client Opened!</span>
+                            <span>Please click 'Send' in your mail application to send your message directly to IPS-KURO.</span>
                         </div>
                     </div>
                 </div>
@@ -626,106 +591,101 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-emerald-900/60">
                 
-                <!-- Col 1: Summary -->
+                <!-- Col 1: Brand & Logo Placeholder -->
                 <div class="space-y-4">
                     <div class="flex items-center space-x-3">
-                        <div class="w-10 h-10 rounded-lg bg-emerald-800 flex items-center justify-center text-gold-400 font-bold">
-                            <i class="fa-solid fa-school"></i>
+                        <!-- FOOTER LOGO PLACEHOLDER SVG -->
+                        <div class="w-10 h-10 rounded-lg bg-emerald-800 flex items-center justify-center border border-emerald-700">
+                            <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 01-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+                            </svg>
                         </div>
                         <span class="font-bold text-white text-base leading-tight">Islamia Public School Kuro</span>
                     </div>
                     <p class="text-xs text-slate-400 leading-relaxed">
-                        A registered primary & middle school in Tehsil Ghowari, District Ghanche, Gilgit-Baltistan. Dedicated to quality education and digital empowerment since 1998.
+                        A registered community educational institution in Tehsil Ghowari, District Ghanche, Gilgit-Baltistan. Rooted in care, learning, and youth empowerment since 1998.
                     </p>
                 </div>
 
-                <!-- Col 2: Quick Links -->
+                <!-- Col 2: Navigation -->
                 <div class="space-y-3">
-                    <h4 class="font-bold text-white text-xs uppercase tracking-wider text-gold-400">Quick Navigation</h4>
+                    <h4 class="font-bold text-white text-xs uppercase tracking-wider text-amber-400">Navigation</h4>
                     <ul class="space-y-2 text-xs">
-                        <li><a href="#home" class="hover:text-gold-400 transition-colors">Home Page</a></li>
-                        <li><a href="#about" class="hover:text-gold-400 transition-colors">About Us & Legacy</a></li>
-                        <li><a href="#facilities" class="hover:text-gold-400 transition-colors">Computer Lab & Facilities</a></li>
-                        <li><a href="#academics" class="hover:text-gold-400 transition-colors">Academic Programs</a></li>
-                        <li><a href="#notice-board" class="hover:text-gold-400 transition-colors">Notice Board</a></li>
+                        <li><a href="#home" class="hover:text-amber-400 transition-colors">Home Page</a></li>
+                        <li><a href="#about" class="hover:text-amber-400 transition-colors">Our Story & Family</a></li>
+                        <li><a href="#facilities" class="hover:text-amber-400 transition-colors">Campus Facilities</a></li>
+                        <li><a href="#academics" class="hover:text-amber-400 transition-colors">Learning Programs</a></li>
+                        <li><a href="#notice-board" class="hover:text-amber-400 transition-colors">Community Notice Board</a></li>
                     </ul>
                 </div>
 
-                <!-- Col 3: Academic Levels -->
+                <!-- Col 3: Community Focus -->
                 <div class="space-y-3">
-                    <h4 class="font-bold text-white text-xs uppercase tracking-wider text-gold-400">Education Levels</h4>
+                    <h4 class="font-bold text-white text-xs uppercase tracking-wider text-amber-400">Our Core Focus</h4>
                     <ul class="space-y-2 text-xs">
-                        <li class="flex items-center"><i class="fa-solid fa-angle-right text-gold-400 mr-2"></i> Primary Level Education</li>
-                        <li class="flex items-center"><i class="fa-solid fa-angle-right text-gold-400 mr-2"></i> Middle Level Education</li>
-                        <li class="flex items-center"><i class="fa-solid fa-angle-right text-gold-400 mr-2"></i> Practical Computer Literacy</li>
-                        <li class="flex items-center"><i class="fa-solid fa-angle-right text-gold-400 mr-2"></i> Co-Curricular Sports & Debates</li>
+                        <li class="flex items-center"><i class="fa-solid fa-heart text-amber-400 mr-2"></i> Child-Centered Learning</li>
+                        <li class="flex items-center"><i class="fa-solid fa-desktop text-amber-400 mr-2"></i> Computer Lab Literacy</li>
+                        <li class="flex items-center"><i class="fa-solid fa-people-group text-amber-400 mr-2"></i> Local Faculty Dedication</li>
+                        <li class="flex items-center"><i class="fa-solid fa-mountain text-amber-400 mr-2"></i> Serving Kuro Village & Ghanche</li>
                     </ul>
                 </div>
 
-                <!-- Col 4: Location Summary -->
+                <!-- Col 4: Regional Address -->
                 <div class="space-y-3">
-                    <h4 class="font-bold text-white text-xs uppercase tracking-wider text-gold-400">Regional Desk</h4>
+                    <h4 class="font-bold text-white text-xs uppercase tracking-wider text-amber-400">Campus Location</h4>
                     <p class="text-xs text-slate-400 leading-relaxed">
                         Village Kuro, Tehsil Ghowari<br>
                         District Ghanche, Gilgit-Baltistan<br>
                         Pakistan
                     </p>
                     <div class="pt-2 text-xs font-semibold text-emerald-400">
-                        <i class="fa-solid fa-shield-halved mr-1"></i> Registered Educational Facility
+                        <i class="fa-solid fa-registered mr-1"></i> Registered Community School
                     </div>
                 </div>
             </div>
 
             <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-400 gap-4">
                 <div>
-                    © 2026 Islamia Public School Kuro (Regd). All Rights Reserved.
+                    © 2026 Islamia Public School Kuro (Regd) Ghanche. All Rights Reserved.
                 </div>
                 <div class="flex items-center space-x-4">
-                    <span>Village Kuro • Tehsil Ghowari • District Ghanche</span>
+                    <span>Village Kuro • Tehsil Ghowari</span>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Interactivity & Logic Script -->
+    <!-- Interactivity Script -->
     <script>
-        // Sample Dynamic Notices Data
+        // Sample Announcements Data
         const NOTICES = [
             {
                 id: 1,
-                title: "Annual Sports Week & Cricket Tournament",
+                title: "Annual Village Sports Week & Cricket Matches",
                 date: "March 15, 2026",
                 category: "sports",
-                badgeClass: "bg-blue-100 text-blue-800",
-                summary: "Inter-class cricket tournament and athletic events scheduled at the Central Playground.",
-                content: "The annual school sports week will commence on the Central Playground. Events include inter-class cricket matches, race sprints, and tug-of-war competitions. All students are encouraged to participate."
+                badgeClass: "bg-blue-100 text-blue-900",
+                summary: "Friendly inter-class cricket matches and sports drills on our village field.",
+                content: "All students are invited to take part in our annual sports week. Events include inter-class cricket matches, field races, and fun team games. Parents are welcome to come watch and encourage our young athletes!"
             },
             {
                 id: 2,
-                title: "Admissions Session Open for Primary & Middle Grades",
+                title: "Warm Welcome to New Primary & Middle Students",
                 date: "March 10, 2026",
                 category: "academic",
-                badgeClass: "bg-emerald-100 text-emerald-800",
-                summary: "Application forms for new admissions in Primary and Middle levels now available.",
-                content: "Islamia Public School Kuro is accepting inquiry forms for the upcoming academic session. Parents can inquire online or visit the school desk during morning hours."
+                badgeClass: "bg-emerald-100 text-emerald-900",
+                summary: "Parent inquiry desk open for upcoming academic admissions in Kuro.",
+                content: "We are delighted to welcome new families in Kuro and neighboring villages of Tehsil Ghowari. Feel free to reach out via our email portal or visit the school office during morning hours."
             },
             {
                 id: 3,
-                title: "Practical Computer Lab Workshops Scheduled",
+                title: "Computer Lab Practice Sessions for Middle Grades",
                 date: "February 28, 2026",
-                category: "events",
-                badgeClass: "bg-amber-100 text-amber-800",
-                summary: "Special hands-on computer orientation classes for middle school students.",
-                content: "Our desktop computer laboratory will host practical IT workshops for middle grade students, focusing on fundamental software navigation, typing practice, and digital literacy basics."
-            },
-            {
-                id: 4,
-                title: "Mid-Term Academic Progress Reports",
-                date: "February 15, 2026",
-                category: "academic",
-                badgeClass: "bg-emerald-100 text-emerald-800",
-                summary: "Parent-teacher meetings for student performance evaluation across all grades.",
-                content: "Parent-teacher review sessions will be conducted to discuss individual student performance tracking and academic evaluation results."
+                category: "community",
+                badgeClass: "bg-amber-100 text-amber-900",
+                summary: "Hands-on basic desktop IT workshops for students.",
+                content: "Middle school classes will participate in guided desktop computer sessions in our laboratory. Students will learn basic typing, operating system navigation, and digital skills."
             }
         ];
 
@@ -744,7 +704,7 @@
             });
         });
 
-        // Dynamic Notice Board Filter & Search Logic
+        // Notice Board Rendering & Search
         const noticeContainer = document.getElementById('notice-container');
         const searchInput = document.getElementById('notice-search');
         const filterBtns = document.querySelectorAll('.notice-filter-btn');
@@ -765,8 +725,8 @@
             if (filtered.length === 0) {
                 noticeContainer.innerHTML = `
                     <div class="col-span-full py-12 text-center text-slate-500 bg-white rounded-2xl border border-slate-200">
-                        <i class="fa-solid fa-folder-open text-3xl text-slate-300 mb-2"></i>
-                        <p class="text-sm font-semibold">No announcements found matching your filter.</p>
+                        <i class="fa-solid fa-heart-crack text-3xl text-slate-300 mb-2"></i>
+                        <p class="text-sm font-semibold">No notices found matching your search.</p>
                     </div>
                 `;
                 return;
@@ -785,21 +745,20 @@
                         <p class="text-xs text-slate-600 leading-relaxed">${notice.summary}</p>
                     </div>
                     <button onclick="openNoticeModal(${notice.id})" class="mt-6 text-xs font-semibold text-emerald-800 hover:text-emerald-950 inline-flex items-center">
-                        Read Full Announcement <i class="fa-solid fa-arrow-right ml-1"></i>
+                        Read Announcement <i class="fa-solid fa-arrow-right ml-1"></i>
                     </button>
                 `;
                 noticeContainer.appendChild(card);
             });
         }
 
-        // Filter button clicks
         filterBtns.forEach(btn => {
-            btn.addEventListener('click', (e) => {
+            btn.addEventListener('click', () => {
                 filterBtns.forEach(b => {
-                    b.classList.remove('bg-white', 'shadow-sm', 'text-emerald-900', 'font-bold');
+                    b.classList.remove('bg-white', 'shadow-sm', 'text-emerald-950', 'font-bold');
                     b.classList.add('text-slate-600');
                 });
-                btn.classList.add('bg-white', 'shadow-sm', 'text-emerald-900', 'font-bold');
+                btn.classList.add('bg-white', 'shadow-sm', 'text-emerald-950', 'font-bold');
                 btn.classList.remove('text-slate-600');
 
                 currentCategory = btn.getAttribute('data-category');
@@ -807,13 +766,12 @@
             });
         });
 
-        // Search Input Filter
         searchInput.addEventListener('input', (e) => {
             searchQuery = e.target.value;
             renderNotices();
         });
 
-        // Notice Modal Control
+        // Notice Modal Logic
         const modal = document.getElementById('notice-modal');
         const closeModalBtn = document.getElementById('close-modal-btn');
         const modalDismissBtn = document.getElementById('modal-dismiss-btn');
@@ -840,7 +798,7 @@
             if (e.target === modal) closeModal();
         });
 
-        // FAQ Accordion Toggle Logic
+        // FAQ Accordion
         const faqToggles = document.querySelectorAll('.faq-toggle');
         faqToggles.forEach(toggle => {
             toggle.addEventListener('click', () => {
@@ -851,20 +809,40 @@
             });
         });
 
-        // Form Submit Handler
+        // Direct Email Form Handler (mailto:)
         const admissionForm = document.getElementById('admission-form');
         const formSuccess = document.getElementById('form-success');
 
         admissionForm.addEventListener('submit', (e) => {
             e.preventDefault();
+
+            const parentName = document.getElementById('parent-name').value;
+            const phoneNumber = document.getElementById('phone-number').value;
+            const studentName = document.getElementById('student-name').value || 'Not specified';
+            const gradeSeeking = document.getElementById('grade-seeking').value;
+            const userMessage = document.getElementById('message').value;
+
+            const emailSubject = encodeURIComponent(`Parent Inquiry - ${parentName} (${gradeSeeking})`);
+            const emailBody = encodeURIComponent(
+                `Parent / Visitor Message\n` +
+                `Islamia Public School Kuro (Regd)\n` +
+                `-----------------------------------------\n\n` +
+                `Name: ${parentName}\n` +
+                `Phone Number: ${phoneNumber}\n` +
+                `Student Name: ${studentName}\n` +
+                `Grade Seeking: ${gradeSeeking}\n\n` +
+                `Message Details:\n${userMessage}\n\n` +
+                `-----------------------------------------\n` +
+                `Sent via IPS-KURO Direct Community Email Portal`
+            );
+
+            const mailtoUrl = `mailto:aliasif.kurovi@gmail.com?subject=${emailSubject}&body=${emailBody}`;
+            window.location.href = mailtoUrl;
+
             formSuccess.classList.remove('hidden');
-            admissionForm.reset();
-            setTimeout(() => {
-                formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-            }, 100);
         });
 
-        // Initial Notice Board Render
+        // Render Initial Notices
         renderNotices();
     </script>
 </body>
